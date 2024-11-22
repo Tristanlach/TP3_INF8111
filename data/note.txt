@@ -1,0 +1,21 @@
+VAX.csv
+	VAERS_ID : identifiant du patient | NUM -> clé primaire
+	VAX_TYPE : type de vaccin | STR
+	VAX_MANU : fabricant du vaccin | STR
+	VAX_NAME : nom du vaccin | STR
+
+DATA.csv
+	VAERS_ID : identifiant du patient | NUM -> clé primaire
+	STATE : état américain du patient | STR
+	AGE_YRS : age du patient | NUM
+	SEX : genre du patient | STR (M | F | U)
+
+SYMPTOMS.csv
+	SYMPTOM_ID : identifiant du symptôme | NUM -> clé primaire
+	SYMPTOM_NAME : nom du symptôme | NUM
+
+OBSERVATIONS.csv
+OBSERVATIONS_extract.csv
+	OBSERVATION_ID : identifiant de l'observation médicale | NUM
+	VAERS_ID : identifiant du patient | NUM -> clé secondaire
+	SYMPTOM_ID : identifiant du symptôme | NUM -> clé secondaire
